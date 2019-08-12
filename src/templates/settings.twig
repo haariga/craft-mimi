@@ -15,12 +15,122 @@
 
 {% import "_includes/forms" as forms %}
 
-{% do view.registerAssetBundle("haariga\\mimi\\assetbundles\\mimi\\MimiAsset") %}
+{#
+    TODO: Kann die Settings Page nicht aufrufen wenn das drin ist
+    Failed to instantiate component or class "haariga\craftMimi\assetbundles\mimi\MimiAsset".
+#}
+{#{% do view.registerAssetBundle("haariga\\craftMimi\\assetbundles\\mimi\\MimiAsset") %}#}
 
-{{ forms.textField({
-    label: 'Some Field',
-    instructions: 'Enter some setting here.',
-    id: 'someAttribute',
-    name: 'someAttribute',
-    value: settings['someAttribute']})
-}}
+<div class="mimi-container">
+    <div class="mimi-row">
+        <div class="mimi-col">
+            {{ forms.elementSelectfield({
+                label: "Default Watermark Image"|t("mimi"),
+                instructions: "Set the default Watermark Image." |t("seomatic"),
+                id: "defaultWatermarkImage",
+                name: "defaultWatermarkImage",
+                viewMode: "large",
+                elementType: 'asset',
+                criteria: {
+                    kind: ["image"],
+                },
+                selectionLabel: "Select an Image"|t("mimi"),
+                sources: [],
+                limit: 1,
+                warning: false,
+            }) }}
+        </div>
+        <div class="mimi-col">
+            {{ forms.elementSelectfield({
+                label: "Default Watermark Graphic"|t("mimi"),
+                instructions: "Set the default Watermark Graphic." |t("seomatic"),
+                id: "defaultWatermarkGraphic",
+                name: "defaultWatermarkGraphic",
+                viewMode: "large",
+                elementType: 'asset',
+                criteria: {
+                    kind: ["image"],
+                },
+                selectionLabel: "Select a graphic"|t("mimi"),
+                sources: [],
+                limit: 1,
+                warning: false,
+            }) }}
+        </div>
+    </div>
+
+    <div class="mimi-row">
+        <div class="mimi-col">
+            {{ forms.textField({
+                label: "Default Watermark Image Width",
+                instructions: "Set the default width of the Watermark Image. (px)" | t("mimi"),
+                id: "defaultWatermarkImageWidth",
+                name: "defaultWatermarkImageWidth",
+                value: settings["someAttribute"]})
+            }}
+        </div>
+        <div class="mimi-col">
+            {{ forms.textField({
+                label: "Default Watermark Image Height",
+                instructions: "Set the default height of the Watermark Image. (px)" | t("mimi"),
+                id: "defaultWatermarkImageHeight",
+                name: "defaultWatermarkImageHeight",
+                value: settings["someAttribute"]})
+            }}
+        </div>
+    </div>
+
+    <div class="mimi-row">
+        <div class="mimi-col">
+            {{ forms.textField({
+                label: "Default Watermark Image Opacity",
+                instructions: "Set the default opacity of the Watermark Image. (0 - 1)" | t("mimi"),
+                id: "defaultWatermarkImageOpacity",
+                name: "defaultWatermarkImageOpacity",
+                value: settings["someAttribute"]})
+            }}
+        </div>
+        <div class="mimi-col">
+            {{ forms.selectField({
+                label: "Default Watermark Image Position"|t,
+                instructions: "Set the default position of the Watermark Image." | t("mimi"),
+                id: 'watermarkImagePosition',
+                name: 'watermarkImagePosition',
+                value: settings["someAttribute"],
+                options: {
+                    'left/top': 'Left - Top',
+                    'left/center': 'Left - Center',
+                    'left/bottom': 'Left - Bottom',
+                    'center/top': 'Center - Top',
+                    'center/center': 'Center - Center',
+                    'center/bottom': 'Center - Bottom',
+                    'right/top': 'Right - Top',
+                    'right/center': 'Right - Center',
+                    'right/bottom': 'Right - Bottom',
+                },
+            }) }}
+        </div>
+    </div>
+
+    <div class="mimi-row">
+        <div class="mimi-col">
+            {{ forms.textField({
+                label: "Default Watermark Image Offset X-Axis",
+                instructions: "Set the default X-Axis Offset of the Watermark Image. (px)" | t("mimi"),
+                id: "defaultWatermarkImageOffsetXAxis",
+                name: "defaultWatermarkImageOffsetXAxis",
+                value: settings["someAttribute"]})
+            }}
+        </div>
+        <div class="mimi-col">
+            {{ forms.textField({
+                label: "Default Watermark Image Offset Y-Axis",
+                instructions: "Set the default Y-Axis Offset of the Watermark Image. (px)" | t("mimi"),
+                id: "defaultWatermarkImageOffsetYAxis",
+                name: "defaultWatermarkImageOffsetYAxis",
+                value: settings["someAttribute"]})
+            }}
+        </div>
+    </div>
+</div>
+
