@@ -19,6 +19,14 @@
         {
             "name": "Haariga",
             "homepage": "https://xn--hriga-mra.com/"
+        },
+        {
+            "name": "Martin Herweg",
+            "homepage": "https://github.com/martinherweg"
+        },
+        {
+            "name": "David Hellmann",
+            "homepage": "https://davidhellmann.com"
         }
     ],
     "require": {
