@@ -1,0 +1,43 @@
+{
+    "name": "haarigamimi/mimi",
+    "description": "Generate share images with preview",
+    "type": "craft-plugin",
+    "version": "0.0.1",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "mimi"
+    ],
+    "support": {
+        "docs": "https://github.com/haariga/mimi/blob/master/README.md",
+        "issues": "https://github.com/haariga/mimi/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Haariga",
+            "homepage": "https://xn--hriga-mra.com/"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "haarigamimi\\mimi\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Mimi",
+        "handle": "mimi",
+        "hasCpSettings": true,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/haariga/mimi/master/CHANGELOG.md",
+        "components": {
+            "mimiService": "haarigamimi\\mimi\\services\\MimiService"
+        },
+        "class": "haarigamimi\\mimi\\Mimi"
+    }
+}

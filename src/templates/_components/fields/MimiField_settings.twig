@@ -1,0 +1,26 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Mimi plugin for Craft CMS
+ *
+ * MimiField Field Settings
+ *
+ * @author    Haariga
+ * @copyright Copyright (c) 2019 Haariga
+ * @link      https://xn--hriga-mra.com/
+ * @package   Mimi
+ * @since     0.0.1
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{% do view.registerAssetBundle("haarigamimi\\mimi\\assetbundles\\mimi\\MimiAsset") %}
+
+{{ forms.textField({
+    label: 'Some Attribute',
+    instructions: 'Enter some attribute here.',
+    id: 'someAttribute',
+    name: 'someAttribute',
+    value: field['someAttribute']})
+}}
