@@ -10,18 +10,3 @@
  * @since     0.0.1
  */
 
-.mimi-container {
-    display: flex;
-    flex-flow: row wrap;
-}
-
-.mimi-row {
-    display: flex;
-    flex-flow: row wrap;
-    margin: 0 -16px;
-}
-
-.mimi-col {
-    padding: 0 16px;
-    margin-top: 32px;
-}
