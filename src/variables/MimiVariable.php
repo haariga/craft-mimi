@@ -8,9 +8,9 @@
  * @copyright Copyright (c) 2019 Haariga
  */
 
-namespace haarigamimi\mimi\variables;
+namespace haariga\mimi\variables;
 
-use haarigamimi\mimi\Mimi;
+use haariga\mimi\Mimi;
 
 use Craft;
 

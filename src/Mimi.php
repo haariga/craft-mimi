@@ -8,12 +8,12 @@
  * @copyright Copyright (c) 2019 Haariga
  */
 
-namespace haarigamimi\mimi;
+namespace haariga\mimi;
 
-use haarigamimi\mimi\services\MimiService as MimiServiceService;
-use haarigamimi\mimi\variables\MimiVariable;
-use haarigamimi\mimi\models\Settings;
-use haarigamimi\mimi\fields\MimiField as MimiFieldField;
+use haariga\mimi\services\MimiService as MimiServiceService;
+use haariga\mimi\variables\MimiVariable;
+use haariga\mimi\models\Settings;
+use haariga\mimi\fields\MimiField as MimiFieldField;
 
 use Craft;
 use craft\base\Plugin;

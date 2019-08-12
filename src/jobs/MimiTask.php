@@ -8,9 +8,9 @@
  * @copyright Copyright (c) 2019 Haariga
  */
 
-namespace haarigamimi\mimi\jobs;
+namespace haariga\mimi\jobs;
 
-use haarigamimi\mimi\Mimi;
+use haariga\mimi\Mimi;
 
 use Craft;
 use craft\queue\BaseJob;
@@ -24,7 +24,7 @@ use craft\queue\BaseJob;
  *
  * You can use it like this:
  *
- * use haarigamimi\mimi\jobs\MimiTask as MimiTaskJob;
+ * use haariga\mimi\jobs\MimiTask as MimiTaskJob;
  *
  * $queue = Craft::$app->getQueue();
  * $jobId = $queue->push(new MimiTaskJob([

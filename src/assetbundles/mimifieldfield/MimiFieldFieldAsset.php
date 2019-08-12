@@ -8,7 +8,7 @@
  * @copyright Copyright (c) 2019 Haariga
  */
 
-namespace haarigamimi\mimi\assetbundles\mimifieldfield;
+namespace haariga\mimi\assetbundles\mimifieldfield;
 
 use Craft;
 use craft\web\AssetBundle;
@@ -43,7 +43,7 @@ class MimiFieldFieldAsset extends AssetBundle
     public function init()
     {
         // define the path that your publishable resources live
-        $this->sourcePath = "@haarigamimi/mimi/assetbundles/mimifieldfield/dist";
+        $this->sourcePath = "@haariga/mimi/assetbundles/mimifieldfield/dist";
 
         // define the dependencies
         $this->depends = [

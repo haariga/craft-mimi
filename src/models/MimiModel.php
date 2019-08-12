@@ -8,9 +8,9 @@
  * @copyright Copyright (c) 2019 Haariga
  */
 
-namespace haarigamimi\mimi\models;
+namespace haariga\mimi\models;
 
-use haarigamimi\mimi\Mimi;
+use haariga\mimi\Mimi;
 
 use Craft;
 use craft\base\Model;

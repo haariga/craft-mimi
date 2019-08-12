@@ -8,9 +8,9 @@
  * @copyright Copyright (c) 2019 Haariga
  */
 
-namespace haarigamimi\mimi\migrations;
+namespace haariga\mimi\migrations;
 
-use haarigamimi\mimi\Mimi;
+use haariga\mimi\Mimi;
 
 use Craft;
 use craft\config\DbConfig;

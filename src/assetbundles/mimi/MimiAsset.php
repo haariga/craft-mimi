@@ -8,7 +8,7 @@
  * @copyright Copyright (c) 2019 Haariga
  */
 
-namespace haarigamimi\mimi\assetbundles\Mimi;
+namespace haariga\mimi\assetbundles\Mimi;
 
 use Craft;
 use craft\web\AssetBundle;
@@ -43,7 +43,7 @@ class MimiAsset extends AssetBundle
     public function init()
     {
         // define the path that your publishable resources live
-        $this->sourcePath = "@haarigamimi/mimi/assetbundles/mimi/dist";
+        $this->sourcePath = "@haariga/mimi/assetbundles/mimi/dist";
 
         // define the dependencies
         $this->depends = [

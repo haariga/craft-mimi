@@ -8,10 +8,10 @@
  * @copyright Copyright (c) 2019 Haariga
  */
 
-namespace haarigamimi\mimi\fields;
+namespace haariga\mimi\fields;
 
-use haarigamimi\mimi\Mimi;
-use haarigamimi\mimi\assetbundles\mimifieldfield\MimiFieldFieldAsset;
+use haariga\mimi\Mimi;
+use haariga\mimi\assetbundles\mimifieldfield\MimiFieldFieldAsset;
 
 use Craft;
 use craft\base\ElementInterface;

@@ -1,5 +1,5 @@
 {
-    "name": "haarigamimi/mimi",
+    "name": "haariga/mimi",
     "description": "Generate share images with preview",
     "type": "craft-plugin",
     "version": "0.0.1",
@@ -26,7 +26,7 @@
     },
     "autoload": {
         "psr-4": {
-          "haarigamimi\\mimi\\": "src/"
+          "haariga\\mimi\\": "src/"
         }
     },
     "extra": {
@@ -36,8 +36,8 @@
         "hasCpSection": false,
         "changelogUrl": "https://raw.githubusercontent.com/haariga/mimi/master/CHANGELOG.md",
         "components": {
-            "mimiService": "haarigamimi\\mimi\\services\\MimiService"
+            "mimiService": "haariga\\mimi\\services\\MimiService"
         },
-        "class": "haarigamimi\\mimi\\Mimi"
+        "class": "haariga\\mimi\\Mimi"
     }
 }
