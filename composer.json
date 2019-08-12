@@ -38,6 +38,6 @@
         "components": {
             "mimiService": "haariga\\mimi\\services\\MimiService"
         },
-        "class": "haariga\\mimi\\Mimi"
+        "class": "haariga\\mimi\\CraftMimi"
     }
 }
