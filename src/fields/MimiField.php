@@ -1,6 +1,6 @@
 <?php
 /**
- * Mimi plugin for Craft CMS 3.x
+ * CraftMimi plugin for Craft CMS 3.x
  *
  * Generate share images with preview
  *
@@ -10,7 +10,7 @@
 
 namespace haariga\mimi\fields;
 
-use haariga\mimi\Mimi;
+use haariga\mimi\CraftMimi;
 use haariga\mimi\assetbundles\mimifieldfield\MimiFieldFieldAsset;
 
 use Craft;
@@ -30,7 +30,7 @@ use craft\helpers\Json;
  * https://craftcms.com/docs/plugins/field-types
  *
  * @author    Haariga
- * @package   Mimi
+ * @package   CraftMimi
  * @since     0.0.1
  */
 class MimiField extends Field

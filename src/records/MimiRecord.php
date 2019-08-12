@@ -1,6 +1,6 @@
 <?php
 /**
- * Mimi plugin for Craft CMS 3.x
+ * CraftMimi plugin for Craft CMS 3.x
  *
  * Generate share images with preview
  *
@@ -10,7 +10,7 @@
 
 namespace haariga\mimi\records;
 
-use haariga\mimi\Mimi;
+use haariga\mimi\CraftMimi;
 
 use Craft;
 use craft\db\ActiveRecord;
@@ -28,7 +28,7 @@ use craft\db\ActiveRecord;
  * http://www.yiiframework.com/doc-2.0/guide-db-active-record.html
  *
  * @author    Haariga
- * @package   Mimi
+ * @package   CraftMimi
  * @since     0.0.1
  */
 class MimiRecord extends ActiveRecord

@@ -1,6 +1,6 @@
 <?php
 /**
- * Mimi plugin for Craft CMS 3.x
+ * CraftMimi plugin for Craft CMS 3.x
  *
  * Generate share images with preview
  *
@@ -10,12 +10,12 @@
 
 namespace haariga\mimi\variables;
 
-use haariga\mimi\Mimi;
+use haariga\mimi\CraftMimi;
 
 use Craft;
 
 /**
- * Mimi Variable
+ * CraftMimi Variable
  *
  * Craft allows plugins to provide their own template variables, accessible from
  * the {{ craft }} global variable (e.g. {{ craft.mimi }}).
@@ -23,7 +23,7 @@ use Craft;
  * https://craftcms.com/docs/plugins/variables
  *
  * @author    Haariga
- * @package   Mimi
+ * @package   CraftMimi
  * @since     0.0.1
  */
 class MimiVariable

@@ -1,6 +1,6 @@
 <?php
 /**
- * Mimi plugin for Craft CMS 3.x
+ * CraftMimi plugin for Craft CMS 3.x
  *
  * Generate share images with preview
  *
@@ -10,7 +10,7 @@
 
 namespace haariga\mimi\jobs;
 
-use haariga\mimi\Mimi;
+use haariga\mimi\CraftMimi;
 
 use Craft;
 use craft\queue\BaseJob;
@@ -42,7 +42,7 @@ use craft\queue\BaseJob;
  * More info: https://github.com/yiisoft/yii2-queue
  *
  * @author    Haariga
- * @package   Mimi
+ * @package   CraftMimi
  * @since     0.0.1
  */
 class MimiTask extends BaseJob

@@ -1,6 +1,6 @@
 <?php
 /**
- * Mimi plugin for Craft CMS 3.x
+ * CraftMimi plugin for Craft CMS 3.x
  *
  * Generate share images with preview
  *
@@ -10,7 +10,7 @@
 
 namespace haariga\mimi\models;
 
-use haariga\mimi\Mimi;
+use haariga\mimi\CraftMimi;
 
 use Craft;
 use craft\base\Model;
@@ -24,7 +24,7 @@ use craft\base\Model;
  * https://craftcms.com/docs/plugins/models
  *
  * @author    Haariga
- * @package   Mimi
+ * @package   CraftMimi
  * @since     0.0.1
  */
 class MimiModel extends Model

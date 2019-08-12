@@ -1,6 +1,6 @@
 <?php
 /**
- * Mimi plugin for Craft CMS 3.x
+ * CraftMimi plugin for Craft CMS 3.x
  *
  * Generate share images with preview
  *
@@ -10,7 +10,7 @@
 
 namespace haariga\mimi\controllers;
 
-use haariga\mimi\Mimi;
+use haariga\mimi\CraftMimi;
 
 use Craft;
 use craft\web\Controller;
@@ -32,7 +32,7 @@ use craft\web\Controller;
  * https://craftcms.com/docs/plugins/controllers
  *
  * @author    Haariga
- * @package   Mimi
+ * @package   CraftMimi
  * @since     0.0.1
  */
 class DefaultController extends Controller

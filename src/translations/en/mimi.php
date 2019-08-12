@@ -1,6 +1,6 @@
 <?php
 /**
- * Mimi plugin for Craft CMS 3.x
+ * CraftMimi plugin for Craft CMS 3.x
  *
  * Generate share images with preview
  *
@@ -9,7 +9,7 @@
  */
 
 /**
- * Mimi en Translation
+ * CraftMimi en Translation
  *
  * Returns an array with the string to be translated (as passed to `Craft::t('mimi', '...')`) as
  * the key, and the translation as the value.
@@ -17,9 +17,9 @@
  * http://www.yiiframework.com/doc-2.0/guide-tutorial-i18n.html
  *
  * @author    Haariga
- * @package   Mimi
+ * @package   CraftMimi
  * @since     0.0.1
  */
 return [
-    'Mimi plugin loaded' => 'Mimi plugin loaded',
+    'CraftMimi plugin loaded' => 'CraftMimi plugin loaded',
 ];

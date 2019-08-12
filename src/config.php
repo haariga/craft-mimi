@@ -1,6 +1,6 @@
 <?php
 /**
- * Mimi plugin for Craft CMS 3.x
+ * CraftMimi plugin for Craft CMS 3.x
  *
  * Generate share images with preview
  *
@@ -9,9 +9,9 @@
  */
 
 /**
- * Mimi config.php
+ * CraftMimi config.php
  *
- * This file exists only as a template for the Mimi settings.
+ * This file exists only as a template for the CraftMimi settings.
  * It does nothing on its own.
  *
  * Don't edit this file, instead copy it to 'craft/config' as 'mimi.php'

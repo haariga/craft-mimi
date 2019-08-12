@@ -1,6 +1,6 @@
 <?php
 /**
- * Mimi plugin for Craft CMS 3.x
+ * CraftMimi plugin for Craft CMS 3.x
  *
  * Generate share images with preview
  *
@@ -29,7 +29,7 @@ use craft\web\assets\cp\CpAsset;
  * http://www.yiiframework.com/doc-2.0/guide-structure-assets.html
  *
  * @author    Haariga
- * @package   Mimi
+ * @package   CraftMimi
  * @since     0.0.1
  */
 class MimiFieldFieldAsset extends AssetBundle
@@ -43,7 +43,7 @@ class MimiFieldFieldAsset extends AssetBundle
     public function init()
     {
         // define the path that your publishable resources live
-        $this->sourcePath = "@haariga/mimi/assetbundles/mimifieldfield/dist";
+        $this->sourcePath = "@haariga/craft-mimi/assetbundles/mimifieldfield/dist";
 
         // define the dependencies
         $this->depends = [

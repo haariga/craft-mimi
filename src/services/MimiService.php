@@ -1,6 +1,6 @@
 <?php
 /**
- * Mimi plugin for Craft CMS 3.x
+ * CraftMimi plugin for Craft CMS 3.x
  *
  * Generate share images with preview
  *
@@ -10,7 +10,7 @@
 
 namespace haariga\mimi\services;
 
-use haariga\mimi\Mimi;
+use haariga\mimi\CraftMimi;
 
 use Craft;
 use craft\base\Component;
@@ -25,7 +25,7 @@ use craft\base\Component;
  * https://craftcms.com/docs/plugins/services
  *
  * @author    Haariga
- * @package   Mimi
+ * @package   CraftMimi
  * @since     0.0.1
  */
 class MimiService extends Component
@@ -39,7 +39,7 @@ class MimiService extends Component
      *
      * From any other plugin file, call it like this:
      *
-     *     Mimi::$plugin->mimiService->exampleService()
+     *     CraftMimi::$plugin->mimiService->exampleService()
      *
      * @return mixed
      */
@@ -47,7 +47,7 @@ class MimiService extends Component
     {
         $result = 'something';
         // Check our Plugin's settings for `someAttribute`
-        if (Mimi::$plugin->getSettings()->someAttribute) {
+        if (CraftMimi::$plugin->getSettings()->someAttribute) {
         }
 
         return $result;

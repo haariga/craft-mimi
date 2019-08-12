@@ -1,6 +1,6 @@
 <?php
 /**
- * Mimi plugin for Craft CMS 3.x
+ * CraftMimi plugin for Craft CMS 3.x
  *
  * Generate share images with preview
  *
@@ -10,14 +10,14 @@
 
 namespace haariga\mimi\migrations;
 
-use haariga\mimi\Mimi;
+use haariga\mimi\CraftMimi;
 
 use Craft;
 use craft\config\DbConfig;
 use craft\db\Migration;
 
 /**
- * Mimi Install Migration
+ * CraftMimi Install Migration
  *
  * If your plugin needs to create any custom database tables when it gets installed,
  * create a migrations/ folder within your plugin folder, and save an Install.php file
@@ -27,7 +27,7 @@ use craft\db\Migration;
  * safeUp() and safeDown() methods.
  *
  * @author    Haariga
- * @package   Mimi
+ * @package   CraftMimi
  * @since     0.0.1
  */
 class Install extends Migration

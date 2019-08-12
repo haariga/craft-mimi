@@ -1,12 +1,12 @@
 /**
- * Mimi plugin for Craft CMS
+ * CraftMimi plugin for Craft CMS
  *
  * MimiField Field JS
  *
  * @author    Haariga
  * @copyright Copyright (c) 2019 Haariga
  * @link      https://xn--hriga-mra.com/
- * @package   Mimi
+ * @package   CraftMimi
  * @since     0.0.1MimiMimiField
  */
 

@@ -1,6 +1,6 @@
 <?php
 /**
- * Mimi plugin for Craft CMS 3.x
+ * CraftMimi plugin for Craft CMS 3.x
  *
  * Generate share images with preview
  *
@@ -38,23 +38,23 @@ use yii\base\Event;
  * https://craftcms.com/docs/plugins/introduction
  *
  * @author    Haariga
- * @package   Mimi
+ * @package   CraftMimi
  * @since     0.0.1
  *
  * @property  MimiServiceService $mimiService
  * @property  Settings $settings
  * @method    Settings getSettings()
  */
-class Mimi extends Plugin
+class CraftMimi extends Plugin
 {
     // Static Properties
     // =========================================================================
 
     /**
      * Static property that is an instance of this plugin class so that it can be accessed via
-     * Mimi::$plugin
+     * CraftMimi::$plugin
      *
-     * @var Mimi
+     * @var CraftMimi
      */
     public static $plugin;
 
@@ -73,7 +73,7 @@ class Mimi extends Plugin
 
     /**
      * Set our $plugin static property to this class so that it can be accessed via
-     * Mimi::$plugin
+     * CraftMimi::$plugin
      *
      * Called after the plugin class is instantiated; do any one-time initialization
      * here such as hooks and events.

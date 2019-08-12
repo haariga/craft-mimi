@@ -1,4 +1,4 @@
-# Mimi plugin for Craft CMS 3.x
+# CraftMimi plugin for Craft CMS 3.x
 
 Generate share images with preview
 
@@ -18,23 +18,23 @@ To install the plugin, follow these instructions.
 
 2. Then tell Composer to load the plugin:
 
-        composer require haariga/mimi
+        composer require haariga/craft-mimi
 
-3. In the Control Panel, go to Settings → Plugins and click the “Install” button for Mimi.
+3. In the Control Panel, go to Settings → Plugins and click the “Install” button for CraftMimi.
 
-## Mimi Overview
-
--Insert text here-
-
-## Configuring Mimi
+## CraftMimi Overview
 
 -Insert text here-
 
-## Using Mimi
+## Configuring CraftMimi
 
 -Insert text here-
 
-## Mimi Roadmap
+## Using CraftMimi
+
+-Insert text here-
+
+## CraftMimi Roadmap
 
 Some things to do, and ideas for potential features:
 
