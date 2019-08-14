@@ -67,6 +67,7 @@
     name: "defaultWatermarkImageWidth",
     value: settings["defaultWatermarkImageWidth"],
     warning: configWarning('defaultWatermarkImageWidth', 'mimi'),
+    errors: settings.getErrors("defaultWatermarkImageWidth"),
 }) }}
 
 {{ forms.textField({
@@ -76,6 +77,7 @@
     name: "defaultWatermarkImageHeight",
     value: settings["defaultWatermarkImageHeight"],
     warning: configWarning('defaultWatermarkImageHeight', 'mimi'),
+    errors: settings.getErrors("defaultWatermarkImageHeight"),
 }) }}
 
 {{ forms.textField({
@@ -85,6 +87,7 @@
     name: "defaultWatermarkImageOpacity",
     value: settings["defaultWatermarkImageOpacity"],
     warning: configWarning('defaultWatermarkImageOpacity', 'mimi'),
+    errors: settings.getErrors("defaultWatermarkImageOpacity"),
 }) }}
 
 {{ forms.selectField({
@@ -94,6 +97,7 @@
     name: 'defaultWatermarkImagePosition',
     value: settings["defaultWatermarkImagePosition"],
     warning: configWarning('defaultWatermarkImagePosition', 'mimi'),
+    errors: settings.getErrors("defaultWatermarkImagePosition"),
     options: {
         'left/top': 'Left - Top',
         'left/center': 'Left - Center',
@@ -114,6 +118,7 @@
     name: "defaultWatermarkImageOffsetXAxis",
     value: settings["defaultWatermarkImageOffsetXAxis"],
     warning: configWarning('defaultWatermarkImageOffsetXAxis', 'mimi'),
+    errors: settings.getErrors("defaultWatermarkImageOffsetXAxis"),
 }) }}
 
 {{ forms.textField({
@@ -123,4 +128,5 @@
     name: "defaultWatermarkImageOffsetYAxis",
     value: settings["defaultWatermarkImageOffsetYAxis"],
     warning: configWarning('defaultWatermarkImageOffsetYAxis', 'mimi'),
+    errors: settings.getErrors("defaultWatermarkImageOffsetYAxis"),
 }) }}
