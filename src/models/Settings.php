@@ -39,7 +39,12 @@ class Settings extends Model
      *
      * @var string
      */
-    public $someAttribute = 'Some Default';
+    public $defaultWatermarkImageWidth = '100';
+    public $defaultWatermarkImageHeight = '100';
+    public $defaultWatermarkImageOpacity = '1';
+    public $defaultWatermarkImagePosition = 'right/bottom';
+    public $defaultWatermarkImageOffsetXAxis = '32';
+    public $defaultWatermarkImageOffsetYAxis = '32';
 
     // Public Methods
     // =========================================================================
@@ -57,8 +62,20 @@ class Settings extends Model
     public function rules()
     {
         return [
-            ['someAttribute', 'string'],
-            ['someAttribute', 'default', 'value' => 'Some Default'],
+            ['defaultWatermarkImageWidth', 'number'],
+            ['defaultWatermarkImageWidth', 'default', 'value' => '100'],
+            ['defaultWatermarkImageHeight', 'number'],
+            ['defaultWatermarkImageHeight', 'default', 'value' => '100'],
+            ['defaultWatermarkImageOpacity', 'number'],
+            ['defaultWatermarkImageOpacity', 'default', 'value' => '1'],
+            ['defaultWatermarkImageOpacity', 'integer', 'min' => '0'],
+            ['defaultWatermarkImageOpacity', 'integer', 'max' => '1'],
+            ['defaultWatermarkImagePosition', 'string'],
+            ['defaultWatermarkImagePosition', 'default', 'value' => 'right/bottom'],
+            ['defaultWatermarkImageOffsetXAxis', 'number'],
+            ['defaultWatermarkImageOffsetXAxis', 'default', 'value' => '32'],
+            ['defaultWatermarkImageOffsetYAxis', 'number'],
+            ['defaultWatermarkImageOffsetYAxis', 'default', 'value' => '32'],
         ];
     }
 }
