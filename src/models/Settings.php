@@ -62,20 +62,23 @@ class Settings extends Model
     public function rules()
     {
         return [
-            ['defaultWatermarkImageWidth', 'number'],
             ['defaultWatermarkImageWidth', 'default', 'value' => '100'],
-            ['defaultWatermarkImageHeight', 'number'],
+            ['defaultWatermarkImageOpacity', 'number', 'min' => '0'],
+
             ['defaultWatermarkImageHeight', 'default', 'value' => '100'],
-            ['defaultWatermarkImageOpacity', 'number'],
-            ['defaultWatermarkImageOpacity', 'default', 'value' => '1'],
-            ['defaultWatermarkImageOpacity', 'integer', 'min' => '0'],
-            ['defaultWatermarkImageOpacity', 'integer', 'max' => '1'],
+            ['defaultWatermarkImageHeight', 'number', 'min' => '0'],
+
+            ['defaultWatermarkImageOpacity', 'default', 'value' => '1', ],
+            ['defaultWatermarkImageOpacity', 'number', 'min' => '0', 'max' => '1'],
+
             ['defaultWatermarkImagePosition', 'string'],
             ['defaultWatermarkImagePosition', 'default', 'value' => 'right/bottom'],
-            ['defaultWatermarkImageOffsetXAxis', 'number'],
+
             ['defaultWatermarkImageOffsetXAxis', 'default', 'value' => '32'],
-            ['defaultWatermarkImageOffsetYAxis', 'number'],
+            ['defaultWatermarkImageOffsetXAxis', 'number', 'min' => '0'],
+
             ['defaultWatermarkImageOffsetYAxis', 'default', 'value' => '32'],
+            ['defaultWatermarkImageOffsetYAxis', 'number', 'min' => '0'],
         ];
     }
 }
