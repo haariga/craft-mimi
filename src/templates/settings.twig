@@ -13,6 +13,7 @@
  */
 #}
 
+{% from 'mimi/_includes/macros' import configWarning %}
 {% import "_includes/forms" as forms %}
 {#
     TODO: @martin
@@ -21,7 +22,7 @@
 
     Asset Fields gehen noch nicht
     Fehlen noch Attribute
-    Das mit dem `value: settings["someAttribute"]})` hab ich auch noch nicht verstanden.
+    Das mit dem `value: settings["someAttribute"]` hab ich auch noch nicht verstanden.
     Finde aber auch nicht wirklich was brauchbares bei Google
 #}
 {#{% do view.registerAssetBundle("haariga\\craftMimi\\assetbundles\\mimi\\MimiAsset") %}#}
@@ -64,24 +65,27 @@
     instructions: "Set the default width of the Watermark Image. (px)" | t("mimi"),
     id: "defaultWatermarkImageWidth",
     name: "defaultWatermarkImageWidth",
-    value: settings["defaultWatermarkImageWidth"]})
-}}
+    value: settings["defaultWatermarkImageWidth"],
+    warning: configWarning('defaultWatermarkImageWidth', 'mimi'),
+}) }}
 
 {{ forms.textField({
     label: "Default Watermark Image Height",
     instructions: "Set the default height of the Watermark Image. (px)" | t("mimi"),
     id: "defaultWatermarkImageHeight",
     name: "defaultWatermarkImageHeight",
-    value: settings["defaultWatermarkImageHeight"]})
-}}
+    value: settings["defaultWatermarkImageHeight"],
+    warning: configWarning('defaultWatermarkImageHeight', 'mimi'),
+}) }}
 
 {{ forms.textField({
     label: "Default Watermark Image Opacity",
     instructions: "Set the default opacity of the Watermark Image. (0 - 1)" | t("mimi"),
     id: "defaultWatermarkImageOpacity",
     name: "defaultWatermarkImageOpacity",
-    value: settings["defaultWatermarkImageOpacity"]})
-}}
+    value: settings["defaultWatermarkImageOpacity"],
+    warning: configWarning('defaultWatermarkImageOpacity', 'mimi'),
+}) }}
 
 {{ forms.selectField({
     label: "Default Watermark Image Position"|t,
@@ -89,6 +93,7 @@
     id: 'defaultWatermarkImagePosition',
     name: 'defaultWatermarkImagePosition',
     value: settings["defaultWatermarkImagePosition"],
+    warning: configWarning('defaultWatermarkImagePosition', 'mimi'),
     options: {
         'left/top': 'Left - Top',
         'left/center': 'Left - Center',
@@ -107,13 +112,15 @@
     instructions: "Set the default X-Axis Offset of the Watermark Image. (px)" | t("mimi"),
     id: "defaultWatermarkImageOffsetXAxis",
     name: "defaultWatermarkImageOffsetXAxis",
-    value: settings["defaultWatermarkImageOffsetXAxis"]})
-}}
+    value: settings["defaultWatermarkImageOffsetXAxis"],
+    warning: configWarning('defaultWatermarkImageOffsetXAxis', 'mimi'),
+}) }}
 
 {{ forms.textField({
     label: "Default Watermark Image Offset Y-Axis",
     instructions: "Set the default Y-Axis Offset of the Watermark Image. (px)" | t("mimi"),
     id: "defaultWatermarkImageOffsetYAxis",
     name: "defaultWatermarkImageOffsetYAxis",
-    value: settings["defaultWatermarkImageOffsetYAxis"]})
-}}
+    value: settings["defaultWatermarkImageOffsetYAxis"],
+    warning: configWarning('defaultWatermarkImageOffsetYAxis', 'mimi'),
+}) }}

@@ -11,7 +11,6 @@
 namespace haariga\mimi\models;
 
 use haariga\mimi\CraftMimi;
-
 use Craft;
 use craft\base\Model;
 
@@ -39,12 +38,12 @@ class Settings extends Model
      *
      * @var string
      */
-    public $defaultWatermarkImageWidth = '100';
-    public $defaultWatermarkImageHeight = '100';
-    public $defaultWatermarkImageOpacity = '1';
+    public $defaultWatermarkImageWidth = 100;
+    public $defaultWatermarkImageHeight = 100;
+    public $defaultWatermarkImageOpacity = 1;
     public $defaultWatermarkImagePosition = 'right/bottom';
-    public $defaultWatermarkImageOffsetXAxis = '32';
-    public $defaultWatermarkImageOffsetYAxis = '32';
+    public $defaultWatermarkImageOffsetXAxis = 32;
+    public $defaultWatermarkImageOffsetYAxis = 32;
 
     // Public Methods
     // =========================================================================
@@ -62,23 +61,23 @@ class Settings extends Model
     public function rules()
     {
         return [
-            ['defaultWatermarkImageWidth', 'default', 'value' => '100'],
-            ['defaultWatermarkImageOpacity', 'number', 'min' => '0'],
+            ['defaultWatermarkImageWidth', 'default', 'value' => 100],
+            ['defaultWatermarkImageOpacity', 'number', 'min' => 0],
 
-            ['defaultWatermarkImageHeight', 'default', 'value' => '100'],
-            ['defaultWatermarkImageHeight', 'number', 'min' => '0'],
+            ['defaultWatermarkImageHeight', 'default', 'value' => 100],
+            ['defaultWatermarkImageHeight', 'number', 'min' => 0],
 
-            ['defaultWatermarkImageOpacity', 'default', 'value' => '1', ],
-            ['defaultWatermarkImageOpacity', 'number', 'min' => '0', 'max' => '1'],
+            ['defaultWatermarkImageOpacity', 'default', 'value' => 1, ],
+            ['defaultWatermarkImageOpacity', 'number', 'min' => 0, 'max' => 1],
 
             ['defaultWatermarkImagePosition', 'string'],
             ['defaultWatermarkImagePosition', 'default', 'value' => 'right/bottom'],
 
-            ['defaultWatermarkImageOffsetXAxis', 'default', 'value' => '32'],
-            ['defaultWatermarkImageOffsetXAxis', 'number', 'min' => '0'],
+            ['defaultWatermarkImageOffsetXAxis', 'default', 'value' => 32],
+            ['defaultWatermarkImageOffsetXAxis', 'number', 'min' => 0],
 
-            ['defaultWatermarkImageOffsetYAxis', 'default', 'value' => '32'],
-            ['defaultWatermarkImageOffsetYAxis', 'number', 'min' => '0'],
+            ['defaultWatermarkImageOffsetYAxis', 'default', 'value' => 32],
+            ['defaultWatermarkImageOffsetYAxis', 'number', 'min' => 0],
         ];
     }
 }
