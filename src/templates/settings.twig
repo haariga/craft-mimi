@@ -43,6 +43,24 @@
     warning: false,
 }) }}
 
+
+{#{% set imageOptions = {
+    fromAsset: "Custom Image"|t("seomatic"),
+    fromUrl: "Custom URL"|t("seomatic"),
+} %}
+
+{% if assetFieldSources is defined and assetFieldSources |length %}
+    {% set imageOptions = { fromField: "From Asset Field"|t("seomatic"), } | merge(imageOptions) %}
+{% endif %}
+{{ forms.select({
+    id: "seoImageSource",
+    name: "seoImageSource",
+    options: imageOptions,
+    value: settings.seoImageSource,
+    class: "seomatic-imageSourceSelect",
+    errors: settings.getErrors("seoImageSource"),
+}) }}#}
+
 {{ forms.elementSelectfield({
     label: "Default Watermark Graphic"|t("mimi"),
     instructions: "Set the default Watermark Graphic." |t("mimi"),
