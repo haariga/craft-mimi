@@ -61,6 +61,8 @@ class Settings extends Model
     public function rules()
     {
         return [
+            [['defaultWatermarkImage', 'defaultWatermarkGraphic'], 'each', 'rule' => ['integer']],
+
             ['defaultWatermarkImageWidth', 'default', 'value' => 100],
             ['defaultWatermarkImageOpacity', 'number', 'min' => 0],
 

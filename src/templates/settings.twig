@@ -27,13 +27,15 @@
 #}
 {#{% do view.registerAssetBundle("haariga\\craftMimi\\assetbundles\\mimi\\MimiAsset") %}#}
 
+{% set waterMarkImage = [] %}
 {{ forms.elementSelectfield({
     label: "Default Watermark Image"|t("mimi"),
     instructions: "Set the default Watermark Image." |t("mimi"),
     id: "defaultWatermarkImage",
     name: "defaultWatermarkImage",
     viewMode: "large",
-    elementType: 'asset',
+    elements: waterMarkImage,
+    elementType: 'craft\\elements\\Asset',
     criteria: {
         kind: ["image"],
     },
@@ -43,31 +45,14 @@
     warning: false,
 }) }}
 
-
-{#{% set imageOptions = {
-    fromAsset: "Custom Image"|t("seomatic"),
-    fromUrl: "Custom URL"|t("seomatic"),
-} %}
-
-{% if assetFieldSources is defined and assetFieldSources |length %}
-    {% set imageOptions = { fromField: "From Asset Field"|t("seomatic"), } | merge(imageOptions) %}
-{% endif %}
-{{ forms.select({
-    id: "seoImageSource",
-    name: "seoImageSource",
-    options: imageOptions,
-    value: settings.seoImageSource,
-    class: "seomatic-imageSourceSelect",
-    errors: settings.getErrors("seoImageSource"),
-}) }}#}
-
 {{ forms.elementSelectfield({
     label: "Default Watermark Graphic"|t("mimi"),
     instructions: "Set the default Watermark Graphic." |t("mimi"),
     id: "defaultWatermarkGraphic",
     name: "defaultWatermarkGraphic",
     viewMode: "large",
-    elementType: 'asset',
+    elements: [],
+    elementType: 'craft\\elements\\Asset',
     criteria: {
         kind: ["image"],
     },
@@ -76,7 +61,6 @@
     limit: 1,
     warning: false,
 }) }}
-
 
 {{ forms.textField({
     label: "Default Watermark Image Width",
