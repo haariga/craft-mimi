@@ -27,14 +27,13 @@
 #}
 {#{% do view.registerAssetBundle("haariga\\craftMimi\\assetbundles\\mimi\\MimiAsset") %}#}
 
-{% set waterMarkImage = [] %}
 {{ forms.elementSelectfield({
     label: "Default Watermark Image"|t("mimi"),
     instructions: "Set the default Watermark Image." |t("mimi"),
     id: "defaultWatermarkImage",
     name: "defaultWatermarkImage",
     viewMode: "large",
-    elements: waterMarkImage,
+    elements: [],
     elementType: 'craft\\elements\\Asset',
     criteria: {
         kind: ["image"],
